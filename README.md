@@ -14,7 +14,7 @@ Worked with the Cyclone V FPGA, written verilog on Quartus Prime and tested phys
  
  - Lab 6 - Finite State Machines
 
-#ARM Assembly
+# ARM Assembly
  - Lab 7 - Word Length Counter
 
  - Lab 8 - Subroutines / Functions
