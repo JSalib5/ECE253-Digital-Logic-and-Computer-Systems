@@ -1,0 +1,142 @@
+#######################Part2###########################
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 20:23:47 on Sep 28,2021
+vlog part2.v 
+-- Compiling module v7404
+-- Compiling module v7408
+-- Compiling module v7432
+-- Compiling module mux2to1
+
+Top level modules:
+	mux2to1
+End time: 20:23:47 on Sep 28,2021, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -do "/cad2/ece253f/public/2/test/run.do" work.part2_tb 
+# Start time: 20:23:48 on Sep 28,2021
+# //  ModelSim - Intel FPGA Edition 2020.1 Feb 28 2020 Linux 4.19.0-17-amd64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Intel FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.part2_tb
+# Loading work.v7404
+# Loading work.v7408
+# Loading work.v7432
+# Loading work.mux2to1
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'inv'.  Expected 12, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /part2_tb/mux_test/inv File: part2.v Line: 81
+# ** Warning: (vsim-3722) part2.v(81): [TFMPC] - Missing connection for port 'pin3'.
+# ** Warning: (vsim-3722) part2.v(81): [TFMPC] - Missing connection for port 'pin5'.
+# ** Warning: (vsim-3722) part2.v(81): [TFMPC] - Missing connection for port 'pin9'.
+# ** Warning: (vsim-3722) part2.v(81): [TFMPC] - Missing connection for port 'pin11'.
+# ** Warning: (vsim-3722) part2.v(81): [TFMPC] - Missing connection for port 'pin13'.
+# ** Warning: (vsim-3722) part2.v(81): [TFMPC] - Missing connection for port 'pin4'.
+# ** Warning: (vsim-3722) part2.v(81): [TFMPC] - Missing connection for port 'pin6'.
+# ** Warning: (vsim-3722) part2.v(81): [TFMPC] - Missing connection for port 'pin8'.
+# ** Warning: (vsim-3722) part2.v(81): [TFMPC] - Missing connection for port 'pin10'.
+# ** Warning: (vsim-3722) part2.v(81): [TFMPC] - Missing connection for port 'pin12'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'andchip'.  Expected 12, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /part2_tb/mux_test/andchip File: part2.v Line: 86
+# ** Warning: (vsim-3722) part2.v(86): [TFMPC] - Missing connection for port 'pin9'.
+# ** Warning: (vsim-3722) part2.v(86): [TFMPC] - Missing connection for port 'pin11'.
+# ** Warning: (vsim-3722) part2.v(86): [TFMPC] - Missing connection for port 'pin13'.
+# ** Warning: (vsim-3722) part2.v(86): [TFMPC] - Missing connection for port 'pin8'.
+# ** Warning: (vsim-3722) part2.v(86): [TFMPC] - Missing connection for port 'pin10'.
+# ** Warning: (vsim-3722) part2.v(86): [TFMPC] - Missing connection for port 'pin12'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'orchip'.  Expected 12, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /part2_tb/mux_test/orchip File: part2.v Line: 95
+# ** Warning: (vsim-3722) part2.v(95): [TFMPC] - Missing connection for port 'pin5'.
+# ** Warning: (vsim-3722) part2.v(95): [TFMPC] - Missing connection for port 'pin9'.
+# ** Warning: (vsim-3722) part2.v(95): [TFMPC] - Missing connection for port 'pin11'.
+# ** Warning: (vsim-3722) part2.v(95): [TFMPC] - Missing connection for port 'pin13'.
+# ** Warning: (vsim-3722) part2.v(95): [TFMPC] - Missing connection for port 'pin4'.
+# ** Warning: (vsim-3722) part2.v(95): [TFMPC] - Missing connection for port 'pin6'.
+# ** Warning: (vsim-3722) part2.v(95): [TFMPC] - Missing connection for port 'pin8'.
+# ** Warning: (vsim-3722) part2.v(95): [TFMPC] - Missing connection for port 'pin10'.
+# ** Warning: (vsim-3722) part2.v(95): [TFMPC] - Missing connection for port 'pin12'.
+# do /cad2/ece253f/public/2/test/run.do
+# Check inverter
+# Input in the order of pin1, pin3, pin5, pin9, pin11, pin13
+# Output in the order of pin2, pin4, pin6, pin8, pin10, pin12
+# input = 000000 output = 111111 golden_output = 111111 PASSED
+# input = 111111 output = 000000 golden_output = 000000 PASSED
+# input = 011100 output = 100011 golden_output = 100011 PASSED
+# End time: 20:23:49 on Sep 28,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 28
+######################SUMMARY of part2##########################
+Number of Errors by compiling the verilog code: 0
+Number of Errors by running the simulation: 0
+Number of PASSED: 3
+Number of FAILED: 0
+part2 is done!
+#######################Part3###########################
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+Start time: 20:23:49 on Sep 28,2021
+vlog part3.v 
+-- Compiling module hex_decoder
+-- Compiling module eqn0
+-- Compiling module eqn1
+-- Compiling module eqn2
+-- Compiling module eqn3
+-- Compiling module eqn4
+-- Compiling module eqn5
+-- Compiling module eqn6
+
+Top level modules:
+	hex_decoder
+End time: 20:23:49 on Sep 28,2021, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2020.1
+
+# vsim -c -do "/cad2/ece253f/public/2/test/run.do" work.part3_tb 
+# Start time: 20:23:50 on Sep 28,2021
+# //  ModelSim - Intel FPGA Edition 2020.1 Feb 28 2020 Linux 4.19.0-17-amd64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Intel FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.part3_tb
+# Loading work.hex_decoder
+# Loading work.eqn0
+# Loading work.eqn1
+# Loading work.eqn2
+# Loading work.eqn3
+# Loading work.eqn4
+# Loading work.eqn5
+# Loading work.eqn6
+# do /cad2/ece253f/public/2/test/run.do
+# input data =  0, your output = 1000000, expected output = 1000000 PASSED
+# input data =  1, your output = 1111001, expected output = 1111001 PASSED
+# input data =  2, your output = 0100100, expected output = 0100100 PASSED
+# End time: 20:23:50 on Sep 28,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+######################SUMMARY of part3##########################
+Number of Errors by compiling the verilog code: 0
+Number of Errors by running the simulation: 0
+Number of PASSED: 3
+Number of FAILED: 0
+part3 is done!
